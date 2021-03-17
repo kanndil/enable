@@ -8,49 +8,71 @@ class Myapp extends StatelessWidget {
     var interface_choices = ["Visual_button", "Voice Over_button"];
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: const Color(0xFF0F323A),
-          appBar: AppBar(
-            backgroundColor: const Color(0x30033049),
-            title: Container(
-              width: double.infinity,
-              child: Text(
-                "enable",
-                style: TextStyle(fontSize: 32, fontFamily: 'RobotoMono'),
-              ),
+        backgroundColor: const Color(0xDD000000),
+        appBar: AppBar(
+          backgroundColor: const Color(0xDD000000),
+          brightness: Brightness.dark,
+          title: Container(
+            width: double.infinity,
+            child: Text(
+              "enable",
+              style: TextStyle(fontSize: 32, fontFamily: 'RobotoMono'),
             ),
           ),
-          body: Column(
-            children: <Widget>[
-              ElevatedButton(
+        ),
+        body: Center(
+          child: Image.network(
+              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+
+          child: Container(
+              height: double.infinity,
+              width: double.infinity,
+              //  children: <Widget>[
+              child: ElevatedButton(
                 child: Text(
-                  interface_choices[0],
+                  'Continue',
                   style:
                       TextStyle(fontSize: 24, color: const Color(0xFFFFFFFF)),
                 ),
-                onPressed: null,
                 style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.black),
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                    const Color(0xFF424242),
+                  ),
                 ),
-              ),
-              ElevatedButton(
-                child: Text(
-                  interface_choices[1],
-                  style:
-                      TextStyle(fontSize: 24, color: const Color(0xFFFFFFFF)),
-                  textAlign: TextAlign.center,
-                ),
+
+                //    padding: EdgeInsets.all(50),
                 onPressed: null,
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.black),
-                ),
               ),
-            ],
-          ),
-          drawer: Drawer(
-              //child: // Populate the Drawer in the next step.
-              )),
+              // child: Align(
+              alignment: Alignment.bottomCenter,
+              margin: const EdgeInsets.only(bottom: 1.0)
+              // child: FlutterLogo(
+              //   size: 60,
+              //    ),
+              //  ),
+              ),
+          //  ],
+        ),
+      ),
+      // drawer: Drawer(
+      //child: // Populate the Drawer in the next step.
+      //      ),
     );
   }
 }
+
+/*
+Center(
+  child: Container(
+    height: 120.0,
+    width: 120.0,
+    color: Colors.blue[50],
+    child: Align(
+      alignment: Alignment.topRight,
+      child: FlutterLogo(
+        size: 60,
+      ),
+    ),
+  ),
+)
+*/
