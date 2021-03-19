@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 
 class Name {
@@ -31,4 +32,24 @@ class Servicetype {
   int numOfReqCG;
   double avgTime;
   int counter;
+}
+
+enum Disability {
+  blind,
+  deaf,
+  old,
+  agility,
+}
+
+enum ServiceList {
+  emergency,
+  walkGuidance,
+  transporation,
+  lifting,
+}
+
+enum ServiceStatus {
+  done,
+  dimissed,
+  ongoing,
 }

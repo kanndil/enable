@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+/*
 void main() => runApp(Myapp());
 
 class Myapp extends StatelessWidget {
@@ -23,36 +23,35 @@ class Myapp extends StatelessWidget {
         body: Center(
           child: Image.network(
               'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-
-          child: Container(
-              height: double.infinity,
-              width: double.infinity,
-              //  children: <Widget>[
-              child: ElevatedButton(
-                child: Text(
-                  'Continue',
-                  style:
-                      TextStyle(fontSize: 24, color: const Color(0xFFFFFFFF)),
-                ),
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(
-                    const Color(0xFF424242),
-                  ),
-                ),
-
-                //    padding: EdgeInsets.all(50),
-                onPressed: null,
-              ),
-              // child: Align(
-              alignment: Alignment.bottomCenter,
-              margin: const EdgeInsets.only(bottom: 1.0)
-              // child: FlutterLogo(
-              //   size: 60,
-              //    ),
-              //  ),
-              ),
-          //  ],
         ),
+
+        child: Container(
+            height: double.infinity,
+            width: double.infinity,
+            //  children: <Widget>[
+            child: ElevatedButton(
+              child: Text(
+                'Continue',
+                style: TextStyle(fontSize: 24, color: const Color(0xFFFFFFFF)),
+              ),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                  const Color(0xFF424242),
+                ),
+              ),
+
+              //    padding: EdgeInsets.all(50),
+              onPressed: null,
+            ),
+            // child: Align(
+            alignment: Alignment.bottomCenter,
+            margin: const EdgeInsets.only(bottom: 1.0)
+            // child: FlutterLogo(
+            //   size: 60,
+            //    ),
+            //  ),
+            ),
+        //  ],
       ),
       // drawer: Drawer(
       //child: // Populate the Drawer in the next step.
@@ -61,7 +60,7 @@ class Myapp extends StatelessWidget {
   }
 }
 
-/*
+
 Center(
   child: Container(
     height: 120.0,
